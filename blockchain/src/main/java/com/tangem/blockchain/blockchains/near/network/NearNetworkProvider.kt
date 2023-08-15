@@ -1,13 +1,12 @@
 package com.tangem.blockchain.blockchains.near.network
 
+import com.tangem.blockchain.common.NetworkProvider
 import com.tangem.blockchain.extensions.Result
 
 /**
  * @author Anton Zhilenkov on 01.08.2023.
  */
-interface NearNetworkProvider {
-
-    val host: String
+interface NearNetworkProvider: NetworkProvider {
 
     suspend fun getAccount(address: String): Result<ViewAccountResult>
 

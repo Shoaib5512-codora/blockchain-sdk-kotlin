@@ -11,7 +11,7 @@ import com.tangem.blockchain.network.MultiNetworkProvider
  * @author Anton Zhilenkov on 01.08.2023.
  */
 class NearNetworkService(
-    private val blockchain: Blockchain,
+    blockchain: Blockchain,
     private val multiJsonRpcProvider: MultiNetworkProvider<NearJsonRpcNetworkProvider>,
 ) {
 

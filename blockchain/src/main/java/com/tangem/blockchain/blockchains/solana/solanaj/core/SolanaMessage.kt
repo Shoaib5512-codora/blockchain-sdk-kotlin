@@ -7,7 +7,7 @@ import org.p2p.solanaj.core.PublicKey
 /**
  * Created by Anton Zhilenkov on 26/01/2022.
  */
-class Message(
+internal class SolanaMessage(
     private val feePayerPublicKey: PublicKey,
 ) : Message() {
 

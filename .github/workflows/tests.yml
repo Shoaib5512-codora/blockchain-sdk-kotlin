@@ -5,6 +5,7 @@ on:
     branches: 
     - 'release/**'
     - 'develop'
+    - 'release-app_**'
   workflow_dispatch:
 
 env:

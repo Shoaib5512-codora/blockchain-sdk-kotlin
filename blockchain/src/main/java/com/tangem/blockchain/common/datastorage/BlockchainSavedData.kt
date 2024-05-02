@@ -12,6 +12,7 @@ internal sealed interface BlockchainSavedData {
     @JsonClass(generateAdapter = true)
     data class Hedera(
         @Json(name = "accountId") val accountId: String,
+        @Json(name = "associatedTokens") val associatedTokens: Set<String> = emptySet(),
         // TODO: Remove this flag in future https://tangem.atlassian.net/browse/AND-7025
         @Json(name = "cache_cleared") val isCacheCleared: Boolean = false,
     ) : BlockchainSavedData
